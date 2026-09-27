@@ -1,0 +1,103 @@
+.impact-banner {
+  background: var(--color-verde-bioloop);
+  padding-block: 0;
+}
+
+.impact-inner {
+  width: 100%;
+  max-width: none;
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  align-items: stretch;
+}
+
+.impact-media {
+  min-height: 360px;
+  background:
+    linear-gradient(180deg, rgba(5, 50, 28, 0.05), rgba(5, 50, 28, 0.18)),
+    url('../../../assets/images/mao-no-solo.jpg') center / cover no-repeat;
+}
+
+.impact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px clamp(24px, 6vw, 84px) 64px 52px;
+}
+
+.impact-eyebrow {
+  color: var(--color-verde-claro);
+  margin-bottom: 12px;
+}
+
+.impact-content h2 {
+  max-width: 620px;
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  line-height: 0.98;
+  color: var(--color-branco);
+  letter-spacing: -0.035em;
+  margin-bottom: 18px;
+}
+
+.impact-content > p {
+  max-width: 54ch;
+  color: var(--color-verde-claro);
+  line-height: 1.65;
+  margin-bottom: 24px;
+}
+
+.impact-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-bottom: 30px;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--color-branco);
+}
+
+.checklist-icone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--color-verde-muito-claro);
+  color: var(--color-verde-institucional-escuro);
+}
+
+.checklist-icone svg {
+  width: 13px;
+  height: 13px;
+}
+
+.btn-impact {
+  align-self: flex-start;
+  background: var(--color-verde-muito-claro);
+  color: var(--color-verde-institucional-escuro);
+}
+
+.btn-impact:hover {
+  background: var(--color-branco);
+}
+
+@media (max-width: 860px) {
+  .impact-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-media {
+    min-height: 280px;
+  }
+
+  .impact-content {
+    padding: 48px 24px 56px;
+  }
+}

@@ -1,0 +1,143 @@
+.chain-section {
+  padding-block: 78px 82px;
+  background: var(--color-creme-principal);
+}
+
+.chain-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.9fr);
+  align-items: end;
+  gap: 72px;
+  margin-bottom: 42px;
+}
+
+.chain-heading-main {
+  max-width: 540px;
+}
+
+.chain-heading h2 {
+  max-width: 520px;
+  font-size: clamp(2rem, 4vw, 3.05rem);
+  line-height: 0.98;
+  color: var(--color-verde-institucional-escuro);
+  letter-spacing: -0.035em;
+}
+
+.chain-heading > p {
+  max-width: 46ch;
+  justify-self: end;
+  color: var(--color-texto-secundario);
+  line-height: 1.65;
+  padding-bottom: 4px;
+}
+
+.chain-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+  align-items: stretch;
+}
+
+.chain-step {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+}
+
+.chain-step-card {
+  flex: 1 1 auto;
+  min-height: 205px;
+  background: var(--color-off-white);
+  border: 1px solid var(--color-borda-suave);
+  border-radius: var(--radius-md);
+  padding: 20px 18px;
+}
+
+.chain-step-icone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-pill);
+  background: var(--color-verde-muito-claro);
+  color: var(--color-verde-bioloop);
+  margin-bottom: 10px;
+}
+
+.chain-step-icone svg {
+  width: 19px;
+  height: 19px;
+}
+
+.chain-step-numero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 14px;
+  border-radius: 50%;
+  background: var(--color-verde-muito-claro);
+  color: var(--color-verde-institucional-escuro);
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.chain-step-card h3 {
+  font-size: 1rem;
+  color: var(--color-verde-institucional-escuro);
+  margin-bottom: 7px;
+}
+
+.chain-step-card p {
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--color-texto-secundario);
+}
+
+.chain-step-seta {
+  flex-shrink: 0;
+  display: flex;
+  color: var(--color-verde-oliva-suave);
+  margin-inline: 5px;
+}
+
+.chain-step-seta svg {
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 1020px) {
+  .chain-heading {
+    gap: 36px;
+  }
+
+  .chain-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .chain-step-seta {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .chain-section {
+    padding-block: 60px;
+  }
+
+  .chain-heading {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .chain-heading > p {
+    justify-self: start;
+  }
+
+  .chain-list {
+    grid-template-columns: 1fr;
+  }
+}

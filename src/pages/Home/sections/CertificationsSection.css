@@ -1,0 +1,38 @@
+.certifications-section {
+  background: var(--color-verde-claro);
+  padding-block: 76px 82px;
+}
+
+.certifications-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(300px, 1.05fr);
+  align-items: end;
+  gap: 72px;
+  margin-bottom: 38px;
+}
+
+.certifications-title h2 {
+  max-width: 520px;
+  font-size: clamp(2rem, 4vw, 2.9rem);
+  line-height: 1;
+  color: var(--color-verde-institucional-escuro);
+  letter-spacing: -0.035em;
+}
+
+.certifications-heading > p {
+  max-width: 52ch;
+  justify-self: end;
+  color: var(--color-texto-secundario);
+  line-height: 1.65;
+}
+
+@media (max-width: 760px) {
+  .certifications-heading {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .certifications-heading > p {
+    justify-self: start;
+  }
+}
