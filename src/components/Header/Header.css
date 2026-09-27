@@ -1,0 +1,133 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  background: var(--color-verde-institucional-escuro);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-branco);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.header-logo-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-verde-oliva-suave);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  color: var(--color-verde-claro);
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-branco);
+}
+
+.nav-link-active {
+  color: var(--color-branco);
+  border-bottom-color: var(--color-verde-oliva-suave);
+}
+
+/* Botão "Cadastro" em destaque — verde muito claro, conforme a tabela de aplicação */
+.header-cta {
+  background: var(--color-verde-muito-claro);
+  color: var(--color-verde-institucional-escuro);
+  padding: 10px 20px;
+}
+
+.header-cta:hover {
+  background: var(--color-branco);
+}
+
+.header-menu-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: var(--color-branco);
+}
+
+.header-menu-toggle svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 860px) {
+  .header-menu-toggle {
+    display: inline-flex;
+  }
+
+  .header-nav {
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 24px;
+    background: var(--color-verde-institucional-escuro);
+    border-top: 1px solid rgba(253, 253, 251, 0.12);
+    transform: translateY(-8px);
+    opacity: 0;
+    pointer-events: none;
+    transition:
+      transform 0.15s ease,
+      opacity 0.15s ease;
+  }
+
+  .header-nav-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .header-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .header-cta {
+    width: 100%;
+    justify-content: center;
+  }
+}

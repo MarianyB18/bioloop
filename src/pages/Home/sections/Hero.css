@@ -1,0 +1,85 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 430px;
+  display: flex;
+  align-items: center;
+  padding-block: 76px 82px;
+  color: var(--color-branco);
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 50, 28, 0.93) 0%,
+      rgba(0, 107, 53, 0.82) 42%,
+      rgba(0, 107, 53, 0.35) 74%,
+      rgba(0, 107, 53, 0.18) 100%
+    ),
+    url('../../../assets/images/usina-biochar.png') center / cover no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 50, 28, 0.2) 0%,
+    rgba(0, 107, 53, 0.08) 55%,
+    rgba(0, 107, 53, 0.02) 100%
+  );
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1180px;
+  margin-inline: auto;
+}
+
+.hero-eyebrow {
+  color: var(--color-verde-claro);
+}
+
+.hero-eyebrow svg {
+  width: 16px;
+  height: 16px;
+}
+
+.hero-title {
+  max-width: 620px;
+  font-size: clamp(2.7rem, 5vw, 4.35rem);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  font-weight: 700;
+  margin: 18px 0 20px;
+}
+
+.hero-subtitle {
+  max-width: 52ch;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-verde-claro);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+@media (max-width: 720px) {
+  .hero {
+    min-height: 0;
+    padding-block: 60px 72px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    justify-content: center;
+  }
+}
