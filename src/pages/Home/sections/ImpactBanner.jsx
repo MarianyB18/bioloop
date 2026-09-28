@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Icon from '../../../components/Icon/Icon';
 import './ImpactBanner.css';
 
@@ -44,9 +45,9 @@ function ImpactBanner() {
             ))}
           </ul>
 
-          <a href="/carbono" className="btn btn-impact">
+          <Link to="/carbono" className="btn btn-impact">
             Conheça nosso Carbono <Icon name="arrowRight" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

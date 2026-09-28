@@ -1,11 +1,10 @@
 import './CertificationBadges.css';
 
-function CertificationBadges({ selos }) {
+function CertificationBadges({ selos, apenasLogos = false }) {
   return (
-    <ul className="badges-grid">
+    <ul className={apenasLogos ? 'badges-grid badges-grid-logos-only' : 'badges-grid'}>
       {selos.map((selo) => (
         <li key={selo.sigla} className="badge-card">
-          
           <div className="badge-logo-slot">
             <img
               src={selo.logo}
@@ -14,14 +13,12 @@ function CertificationBadges({ selos }) {
             />
           </div>
 
-          <span className="badge-sigla">
-            {selo.sigla}
-          </span>
-
-          <span className="badge-legenda">
-            {selo.legenda}
-          </span>
-
+          {!apenasLogos && (
+            <>
+              <span className="badge-sigla">{selo.sigla}</span>
+              <span className="badge-legenda">{selo.legenda}</span>
+            </>
+          )}
         </li>
       ))}
     </ul>
