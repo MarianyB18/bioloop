@@ -1,27 +1,14 @@
 import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import Icon from '../Icon/Icon';
 import './Header.css';
 
 const NAV_ITEMS = [
-  { label: 'Home', href: '/', active: true },
+  { label: 'Home', href: '/' },
   { label: 'Cooperativa', href: '/cooperativa' },
   { label: 'Carbono', href: '/carbono' },
   { label: 'Fale conosco', href: '/fale-conosco' },
 ];
-
-// Recebe os dados do link como props — nunca hardcoded direto no menu.
-function NavLink(props) {
-  return (
-    <li>
-      <a
-        href={props.href}
-        className={props.active ? 'nav-link nav-link-active' : 'nav-link'}
-      >
-        {props.label}
-      </a>
-    </li>
-  );
-}
 
 function Header() {
   const [menuAberto, setMenuAberto] = useState(false);
@@ -33,26 +20,34 @@ function Header() {
   return (
     <header className="header">
       <div className="container header-inner">
-        <a href="/" className="header-logo">
+        <Link to="/" className="header-logo">
           <Icon name="leaf" className="header-logo-icon" />
           BioLoop
-        </a>
+        </Link>
 
         <nav className={menuAberto ? 'header-nav header-nav-open' : 'header-nav'}>
           <ul>
             {NAV_ITEMS.map((item) => (
-              <NavLink
-                key={item.label}
-                label={item.label}
-                href={item.href}
-                active={item.active}
-              />
+              <li key={item.label}>
+                {/* NavLink já sabe qual é a rota atual e aplica a classe
+                    "nav-link-active" sozinho — não precisamos mais de um
+                    campo "active" fixo em cada item do menu. */}
+                <NavLink
+                  to={item.href}
+                  end={item.href === '/'}
+                  className={({ isActive }) =>
+                    isActive ? 'nav-link nav-link-active' : 'nav-link'
+                  }
+                >
+                  {item.label}
+                </NavLink>
+              </li>
             ))}
           </ul>
 
-          <a href="/cadastro" className="btn header-cta">
+          <Link to="/cadastro" className="btn header-cta">
             Cadastro
-          </a>
+          </Link>
         </nav>
 
         <button

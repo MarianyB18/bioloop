@@ -1,0 +1,69 @@
+.fc-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  padding-block: 76px 82px;
+  color: var(--color-branco);
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 50, 28, 0.93) 0%,
+      rgba(0, 107, 53, 0.82) 42%,
+      rgba(0, 107, 53, 0.35) 74%,
+      rgba(0, 107, 53, 0.18) 100%
+    ),
+    url('../../../assets/images/visao-alto.jpg') center / cover no-repeat;
+}
+
+.fc-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 50, 28, 0.2) 0%,
+    rgba(0, 107, 53, 0.08) 55%,
+    rgba(0, 107, 53, 0.02) 100%
+  );
+  pointer-events: none;
+}
+
+.fc-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1180px;
+  margin-inline: auto;
+}
+
+.fc-hero-eyebrow {
+  color: var(--color-verde-claro);
+}
+
+.fc-hero-eyebrow svg {
+  width: 16px;
+  height: 16px;
+}
+
+.fc-hero-title {
+  max-width: 640px;
+  font-size: clamp(2.2rem, 4.4vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  margin: 16px 0 16px;
+}
+
+.fc-hero-subtitle {
+  max-width: 52ch;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-verde-claro);
+}
+
+@media (max-width: 720px) {
+  .fc-hero {
+    min-height: 0;
+    padding-block: 60px 68px;
+  }
+}

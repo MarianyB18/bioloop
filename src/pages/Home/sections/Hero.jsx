@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Icon from '../../../components/Icon/Icon';
 import './Hero.css';
 
@@ -22,9 +23,9 @@ function Hero() {
         </p>
 
         <div className="hero-actions">
-          <a href="/cadastro" className="btn btn-onlight">
+          <Link to="/cadastro" className="btn btn-onlight">
             Quero fazer parte <Icon name="arrowRight" />
-          </a>
+          </Link>
           <a href="#cadeia" className="btn btn-outline-onbrand">
             Conheça a BioLoop
           </a>

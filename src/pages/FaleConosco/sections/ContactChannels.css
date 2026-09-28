@@ -1,0 +1,82 @@
+.channels-section {
+  background: var(--color-creme-principal);
+  padding-block: 48px 0;
+}
+
+.channels-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.channel-card {
+  background: var(--color-off-white);
+  border: 1px solid var(--color-borda-suave);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  padding: 24px 20px;
+}
+
+.channel-icone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-pill);
+  background: var(--color-verde-muito-claro);
+  color: var(--color-verde-bioloop);
+  margin-bottom: 14px;
+}
+
+.channel-icone svg {
+  width: 19px;
+  height: 19px;
+}
+
+.channel-card h3 {
+  font-size: 1rem;
+  color: var(--color-verde-institucional-escuro);
+  margin-bottom: 8px;
+}
+
+.channel-linha {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--color-texto-escuro);
+}
+
+.channel-linha-secundaria {
+  color: var(--color-texto-secundario);
+  margin-bottom: 14px;
+}
+
+.channel-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-verde-bioloop);
+}
+
+.channel-link svg {
+  width: 14px;
+  height: 14px;
+}
+
+.channel-link:hover {
+  color: var(--color-verde-medio);
+}
+
+@media (max-width: 960px) {
+  .channels-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .channels-grid {
+    grid-template-columns: 1fr;
+  }
+}
