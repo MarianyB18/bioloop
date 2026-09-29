@@ -9,6 +9,7 @@ import {
 import './index.css'
 import App from './App.jsx'
 import Home from './pages/Home/Home.jsx'
+import Cooperativa from './pages/Cooperativa/Cooperativa.jsx'
 import FaleConosco from './pages/FaleConosco/FaleConosco.jsx'
 
 const router = createBrowserRouter(
@@ -23,13 +24,13 @@ const router = createBrowserRouter(
         },
 
         {
-          path: 'fale-conosco',
-          element: <FaleConosco />,
+          path: 'cooperativa',
+          element: <Cooperativa />,
         },
 
         {
-          path: 'cooperativa',
-          element: <Navigate to="/" replace />,
+          path: 'fale-conosco',
+          element: <FaleConosco />,
         },
 
         {
@@ -53,4 +54,4 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
   </StrictMode>
-)
+)

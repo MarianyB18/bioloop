@@ -1,0 +1,76 @@
+.coop-cta-section {
+  background: var(--color-creme-principal);
+  padding-block: 0 80px;
+}
+
+.coop-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  background: var(--color-verde-bioloop);
+  border-radius: var(--radius-lg);
+  padding: 32px 40px;
+}
+
+.coop-cta-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 94px;
+  height: 94px;
+  flex: 0 0 94px;
+  border-radius: 24px;
+  background: rgba(227, 241, 216, 0.16);
+  color: var(--color-verde-muito-claro);
+}
+
+.coop-cta-icon svg {
+  width: 58px;
+  height: 58px;
+  stroke-width: 1.45;
+}
+
+.coop-cta-text {
+  flex: 1 1 420px;
+}
+
+.coop-cta-eyebrow {
+  color: var(--color-verde-claro);
+  margin-bottom: 10px;
+}
+
+.coop-cta-text h2 {
+  max-width: 520px;
+  font-size: clamp(1.4rem, 2.6vw, 1.85rem);
+  line-height: 1.25;
+  color: var(--color-branco);
+  letter-spacing: -0.01em;
+}
+
+.coop-cta-btn {
+  flex-shrink: 0;
+}
+
+@media (max-width: 720px) {
+  .coop-cta-inner {
+    padding: 32px 28px;
+  }
+
+  .coop-cta-icon {
+    width: 76px;
+    height: 76px;
+    flex-basis: 76px;
+  }
+
+  .coop-cta-icon svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .coop-cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
