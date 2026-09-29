@@ -56,6 +56,13 @@ function Icon(props) {
         <path d="M7 8 9 6h3l2 2M17 8l3 3-3 3" />
       </>
     ),
+    search: (
+      <>
+        <circle cx="11" cy="11" r="7" />
+        <path d="m21 21-4.3-4.3" />
+      </>
+    ),
+    filter: <path d="M4 5h16l-6 7v6l-4 2v-8L4 5Z" />,
   };
 
   return (

@@ -13,6 +13,8 @@
 
   /* Fundo */
   --color-creme-principal: #f4f7ef;
+  /* Tom de destaque suave para áreas de interface sobre o creme principal. */
+  --color-creme-destaque: #ecefe4;
   --color-off-white: #fafbf7;
   --color-branco: #fdfdfb;
 
