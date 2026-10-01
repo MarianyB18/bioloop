@@ -14,6 +14,7 @@
 .certifications-title h2 {
   max-width: 520px;
   font-size: clamp(2rem, 4vw, 2.9rem);
+  font-family: var(--fonte-titulos);
   line-height: 1;
   color: var(--color-verde-institucional-escuro);
   letter-spacing: -0.035em;
@@ -22,9 +23,12 @@
 .certifications-heading > p {
   max-width: 52ch;
   justify-self: end;
-  color: var(--color-texto-secundario);
+  font-family: var(--fonte-texto);
+  color: var(--color-verde-institucional-escuro);
   line-height: 1.65;
+  font-size: 1.05rem;
 }
+
 
 @media (max-width: 760px) {
   .certifications-heading {

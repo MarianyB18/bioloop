@@ -16,9 +16,10 @@
   align-items: center;
   gap: 8px;
   color: var(--color-branco);
-  font-size: 1.15rem;
+  font-size: 1.40rem;
   font-weight: 700;
   margin-bottom: 12px;
+  font-family: var(--fonte-texto);
 }
 
 .footer-logo-icon {
@@ -30,7 +31,8 @@
 .footer-brand p {
   max-width: 32ch;
   line-height: 1.6;
-  font-size: 0.92rem;
+  font-size: 1rem;
+  font-family: var(--fonte-texto);
 }
 
 .footer-heading {
@@ -46,11 +48,14 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+
 }
 
 .footer-nav a {
-  font-size: 0.92rem;
+  font-size: 0.96rem;
   transition: color 0.15s ease;
+  font-family: var(--fonte-texto);
 }
 
 .footer-nav a:hover {
@@ -58,8 +63,9 @@
 }
 
 .footer-connect p {
-  font-size: 0.92rem;
+  font-size: 0.96rem;
   margin-bottom: 16px;
+  font-family: var(--fonte-texto);
 }
 
 .footer-cta {
@@ -70,6 +76,7 @@
   display: flex;
   flex-direction: column;
   gap: 11px;
+
 }
 
 .footer-sac-list a {
@@ -79,6 +86,7 @@
   color: var(--color-verde-claro);
   font-size: 0.82rem;
   line-height: 1.4;
+  
 }
 
 .footer-sac-list a:hover {
