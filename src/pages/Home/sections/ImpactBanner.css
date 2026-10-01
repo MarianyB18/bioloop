@@ -28,6 +28,7 @@
 .impact-eyebrow {
   color: var(--color-verde-claro);
   margin-bottom: 12px;
+  font-family: var(--fonte-texto);
 }
 
 .impact-content h2 {
@@ -35,6 +36,7 @@
   font-size: clamp(2rem, 4vw, 3.1rem);
   line-height: 0.98;
   color: var(--color-branco);
+  font-family: var(--fonte-titulos);
   letter-spacing: -0.035em;
   margin-bottom: 18px;
 }
@@ -42,14 +44,17 @@
 .impact-content > p {
   max-width: 54ch;
   color: var(--color-verde-claro);
+  font-family: var(--fonte-texto);
   line-height: 1.65;
   margin-bottom: 24px;
+  font-size: 1.05rem;
 }
 
 .impact-checklist {
   display: flex;
   flex-direction: column;
   gap: 11px;
+  font-family: var(--fonte-texto);
   margin-bottom: 30px;
 }
 
@@ -57,7 +62,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--color-branco);
 }
 
@@ -80,6 +85,7 @@
 
 .btn-impact {
   align-self: flex-start;
+  font-family: var(--fonte-texto);
   background: var(--color-verde-muito-claro);
   color: var(--color-verde-institucional-escuro);
 }

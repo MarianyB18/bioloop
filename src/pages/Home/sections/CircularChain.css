@@ -19,14 +19,15 @@
   max-width: 520px;
   font-size: clamp(2rem, 4vw, 3.05rem);
   line-height: 0.98;
+  font-family: var(--fonte-titulos);
   color: var(--color-verde-institucional-escuro);
   letter-spacing: -0.035em;
 }
 
-.chain-heading > p {
+.chain-heading>p {
   max-width: 46ch;
   justify-self: end;
-  color: var(--color-texto-secundario);
+  color: var(--color-verde-institucional-escuro);
   line-height: 1.65;
   padding-bottom: 4px;
 }
@@ -57,18 +58,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
+  width: 45px;
   height: 38px;
-  border-radius: var(--radius-pill);
-  background: var(--color-verde-muito-claro);
   color: var(--color-verde-bioloop);
   margin-bottom: 10px;
 }
 
-.chain-step-icone svg {
-  width: 19px;
-  height: 19px;
-}
 
 .chain-step-numero {
   display: flex;
@@ -99,13 +94,14 @@
 .chain-step-seta {
   flex-shrink: 0;
   display: flex;
-  color: var(--color-verde-oliva-suave);
+  color: var(--color-verde-institucional-escuro);
   margin-inline: 5px;
 }
 
 .chain-step-seta svg {
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
+
 }
 
 @media (max-width: 1020px) {
@@ -133,7 +129,7 @@
     gap: 20px;
   }
 
-  .chain-heading > p {
+  .chain-heading>p {
     justify-self: start;
   }
 

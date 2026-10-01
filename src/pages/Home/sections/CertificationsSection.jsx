@@ -20,7 +20,7 @@ function CertificationsSection() {
             créditos gerados.
           </p>
         </div>
-
+     
         <CertificationBadges selos={SELOS_CARBONO} />
       </div>
     </section>
