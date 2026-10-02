@@ -1,6 +1,7 @@
 .search-filters-section {
   background: var(--color-creme-principal);
   padding-block: 0 32px;
+  font-family: var(--fonte-texto);
 }
 
 .search-filters-bar {
@@ -46,8 +47,8 @@
 
 .search-filters-bar select {
   flex: 0 1 190px;
-  font-family: inherit;
-  font-size: 0.88rem;
+  font-family: var(--fonte-texto);
+  font-size: 0.90rem;
   color: var(--color-texto-escuro);
   background: var(--color-branco);
   border: 1px solid var(--color-borda-form);

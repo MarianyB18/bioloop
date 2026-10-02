@@ -39,12 +39,14 @@
 .coop-cta-eyebrow {
   color: var(--color-verde-claro);
   margin-bottom: 10px;
+  font-family: var(--fonte-texto);
 }
 
 .coop-cta-text h2 {
   max-width: 520px;
   font-size: clamp(1.4rem, 2.6vw, 1.85rem);
   line-height: 1.25;
+  font-family: var(--fonte-titulos);
   color: var(--color-branco);
   letter-spacing: -0.01em;
 }
