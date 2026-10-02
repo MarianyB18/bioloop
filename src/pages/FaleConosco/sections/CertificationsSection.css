@@ -1,6 +1,7 @@
 .fc-certifications-section {
   background: var(--color-verde-claro);
   padding-block: 76px 82px;
+  font-family: var(--fonte-texto);
 }
 
 .fc-certifications-heading {
@@ -15,6 +16,7 @@
   max-width: 460px;
   font-size: clamp(1.6rem, 3vw, 2.15rem);
   line-height: 1.15;
+  font-family: var(--fonte-titulos);
   color: var(--color-verde-institucional-escuro);
   letter-spacing: -0.02em;
 }

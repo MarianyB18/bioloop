@@ -13,6 +13,8 @@
 .coop-page-header-main {
   max-width: 560px;
   padding-right: 0;
+  font-family: var(--fonte-texto);
+
 }
 
 .coop-page-header-main h1 {
