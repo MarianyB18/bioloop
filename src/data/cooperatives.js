@@ -1,6 +1,10 @@
 import visaoAlto from '../assets/images/visao-alto.jpg';
 import usinaBiochar from '../assets/images/usina-biochar.png';
 import maoNoSolo from '../assets/images/mao-no-solo.jpg';
+import tratorPulverizando from '../assets/images/trator-pulverizando.jpg'
+import colheitadeira from '../assets/images/colheitadeira.jpg'
+import maoNoCafe from '../assets/images/mao-no-cafe.jpg'
+import terrasVerdes from '../assets/images/terras-verdes.jpg'
 
 export const SERVICOS_FILTRO = [
   { value: 'todos', label: 'Todos os serviços' },
@@ -44,7 +48,7 @@ export const COOPERATIVAS = [
   },
   {
     nome: 'Coop. Pecuária Forte',
-    imagem: visaoAlto,
+    imagem: tratorPulverizando,
     municipio: 'Uruaçu',
     estado: 'GO',
     descricao:
@@ -55,7 +59,7 @@ export const COOPERATIVAS = [
   },
   {
     nome: 'Coop. Agroflorestal do Vale',
-    imagem: maoNoSolo,
+    imagem: colheitadeira,
     municipio: 'Alta Floresta',
     estado: 'MT',
     descricao:
@@ -66,7 +70,7 @@ export const COOPERATIVAS = [
   },
   {
     nome: 'Coop. Raízes do Campo',
-    imagem: usinaBiochar,
+    imagem: maoNoCafe,
     municipio: 'Jataí',
     estado: 'GO',
     descricao:
@@ -77,7 +81,7 @@ export const COOPERATIVAS = [
   },
   {
     nome: 'Coop. Ciclo Verde',
-    imagem: visaoAlto,
+    imagem: terrasVerdes,
     municipio: 'Toledo',
     estado: 'PR',
     descricao:

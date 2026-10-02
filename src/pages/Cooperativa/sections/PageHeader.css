@@ -17,6 +17,7 @@
 
 .coop-page-header-main h1 {
   font-size: clamp(1.9rem, 3.6vw, 2.7rem);
+  font-family: var(--fonte-titulos);
   line-height: 1.08;
   color: var(--color-verde-institucional-escuro);
   letter-spacing: -0.02em;
@@ -25,6 +26,7 @@
 
 .coop-page-header-main > p {
   color: var(--color-texto-secundario);
+  font-family: var(--fonte-texto);
   line-height: 1.65;
 }
 
@@ -60,14 +62,16 @@
 }
 
 .diferencial-item h3 {
-  font-size: 0.92rem;
+  font-size: 0.96rem;
+  font-family: var(--fonte-titulos);
   color: var(--color-verde-institucional-escuro);
   margin-bottom: 3px;
 }
 
 .diferencial-item p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1.45;
+  font-family: var(--fonte-texto);
   color: var(--color-texto-secundario);
 }
 
