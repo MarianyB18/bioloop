@@ -38,6 +38,7 @@
   font-size: 1rem;
   color: var(--color-verde-institucional-escuro);
   margin-bottom: 8px;
+  font-family: var(--fonte-titulos);
 }
 
 .channel-linha {
@@ -49,12 +50,15 @@
 .channel-linha-secundaria {
   color: var(--color-texto-secundario);
   margin-bottom: 14px;
+  font-family: var(--fonte-texto);
+ 
 }
 
 .channel-link {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  font-family: var(--fonte-texto);
   font-size: 0.85rem;
   font-weight: 700;
   color: var(--color-verde-bioloop);

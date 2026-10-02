@@ -10,11 +10,11 @@
     linear-gradient(
       90deg,
       rgba(5, 50, 28, 0.93) 0%,
-      rgba(0, 107, 53, 0.82) 42%,
+      rgba(0, 107, 53, 0.82) 40%,
       rgba(0, 107, 53, 0.35) 74%,
       rgba(0, 107, 53, 0.18) 100%
     ),
-    url('../../../assets/images/visao-alto.jpg') center / cover no-repeat;
+    url('../../../assets/adubo.jpg') center / cover no-repeat;
 }
 
 .fc-hero-overlay {
@@ -38,6 +38,7 @@
 
 .fc-hero-eyebrow {
   color: var(--color-verde-claro);
+  font-family: var(--fonte-texto);
 }
 
 .fc-hero-eyebrow svg {
@@ -49,6 +50,7 @@
   max-width: 640px;
   font-size: clamp(2.2rem, 4.4vw, 3.4rem);
   line-height: 1.05;
+  font-family: var(--fonte-titulos);
   letter-spacing: -0.03em;
   font-weight: 700;
   margin: 16px 0 16px;
@@ -56,7 +58,8 @@
 
 .fc-hero-subtitle {
   max-width: 52ch;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-family: var(--fonte-texto);
   line-height: 1.6;
   color: var(--color-verde-claro);
 }

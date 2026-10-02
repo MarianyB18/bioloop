@@ -3,7 +3,7 @@ export const CANAIS_CONTATO = [
     icone: 'pin',
     titulo: 'Endereço',
     linha1: 'Av. Presidente Vargas, Nº 1.876',
-    linha2: 'Jd. Goiás - CEP: 75001-301, Rio Verde - GO',
+    linha2: 'CEP: 75001-301, Rio Verde - GO',
     acao: 'Ver no mapa',
     href: 'https://maps.google.com/?q=Av.+Presidente+Vargas,+1876,+Rio+Verde+GO',
   },

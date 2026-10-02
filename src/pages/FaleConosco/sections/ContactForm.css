@@ -1,6 +1,7 @@
 .contact-form-section {
   background: var(--color-creme-principal);
   padding-block: 88px;
+  font-family: var(--fonte-texto);
 }
 
 .contact-form-inner {
@@ -14,6 +15,7 @@
   font-size: clamp(2rem, 4vw, 2.6rem);
   line-height: 1.05;
   color: var(--color-verde-institucional-escuro);
+  font-family: var(--fonte-titulos);
   letter-spacing: -0.03em;
   margin: 10px 0 16px;
 }
@@ -23,6 +25,8 @@
   color: var(--color-texto-secundario);
   line-height: 1.6;
   margin-bottom: 28px;
+  font-size: 1.1rem;
+
 }
 
 .form-benefits {
@@ -35,7 +39,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 0.92rem;
+  font-size: 0.94rem;
   color: var(--color-texto-escuro);
 }
 
