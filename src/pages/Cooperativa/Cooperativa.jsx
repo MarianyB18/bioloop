@@ -6,8 +6,6 @@ import CtaBanner from './sections/CtaBanner';
 import { COOPERATIVAS } from '../../data/cooperatives';
 
 function Cooperativa() {
-  // Os estados abaixo representam os valores que o usuário está escolhendo
-  // no formulário. Eles só passam a afetar a listagem após clicar em Filtrar.
   const [busca, setBusca] = useState('');
   const [servico, setServico] = useState('todos');
   const [regiao, setRegiao] = useState('todas');

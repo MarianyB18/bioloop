@@ -19,8 +19,6 @@ const DIFERENCIAIS = [
   },
 ];
 
-// Cada diferencial recebe seus dados via props — mesmo padrão já usado
-// nos cards da Home (ChainStep) e da Fale conosco (ContactChannel).
 function DiferencialItem(props) {
   return (
     <li className="diferencial-item">

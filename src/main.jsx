@@ -11,6 +11,7 @@ import App from './App.jsx'
 import Home from './pages/Home/Home.jsx'
 import Cooperativa from './pages/Cooperativa/Cooperativa.jsx'
 import FaleConosco from './pages/FaleConosco/FaleConosco.jsx'
+import Login from './pages/Login/Login.jsx'
 
 const router = createBrowserRouter(
   [
@@ -34,13 +35,18 @@ const router = createBrowserRouter(
         },
 
         {
+          path: 'login',
+          element: <Login />,
+        },
+
+        {
           path: 'carbono',
           element: <Navigate to="/" replace />,
         },
 
         {
           path: 'cadastro',
-          element: <Navigate to="/" replace />,
+          element: <Navigate to="/login?modo=cadastro" replace />,
         },
       ],
     },

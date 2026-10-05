@@ -3,9 +3,6 @@ import { SELOS_CARBONO } from '../../../data/certifications';
 import './CertificationsSection.css';
 
 
-// Mesmo componente de certificações usado na Home (CertificationBadges +
-// SELOS_CARBONO) — só o texto de cabeçalho muda, conforme o mockup da
-// tela Fale conosco.
 function CertificationsSection() {
   return (
     <section className="fc-certifications-section">

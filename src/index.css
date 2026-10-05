@@ -57,7 +57,7 @@ p {
   flex: 1 1 auto;
 }
 
-/* Utilitário de largura de conteúdo, reaproveitado por seções e pelo header/footer */
+/* Container de largura de conteúdo */
 .container {
   width: 100%;
   max-width: var(--container-width);
@@ -65,7 +65,7 @@ p {
   padding-inline: 24px;
 }
 
-/* Botões — variantes usadas em toda a aplicação */
+/* Botões */
 .btn {
   display: inline-flex;
   align-items: center;
