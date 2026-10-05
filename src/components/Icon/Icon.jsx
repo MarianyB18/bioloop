@@ -60,6 +60,20 @@ function Icon(props) {
       </>
     ),
     filter: <path d="M4 5h16l-6 7v6l-4 2v-8L4 5Z" />,
+    fileText: (
+      <>
+        <path d="M6 3h8l5 5v13H6V3Z" />
+        <path d="M14 3v5h5" />
+        <path d="M9 12h6M9 16h6" />
+      </>
+    ),
+    alert: (
+      <>
+        <path d="M12 4 2.5 20h19L12 4Z" />
+        <path d="M12 10v5" />
+        <path d="M12 17.8h.01" />
+      </>
+    ),
   };
 
   return (

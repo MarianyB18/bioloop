@@ -12,6 +12,7 @@ import Home from './pages/Home/Home.jsx'
 import Cooperativa from './pages/Cooperativa/Cooperativa.jsx'
 import FaleConosco from './pages/FaleConosco/FaleConosco.jsx'
 import Login from './pages/Login/Login.jsx'
+import Carbono from './pages/Carbono/Carbono.jsx'
 
 const router = createBrowserRouter(
   [
@@ -41,7 +42,7 @@ const router = createBrowserRouter(
 
         {
           path: 'carbono',
-          element: <Navigate to="/" replace />,
+          element: <Carbono />,
         },
 
         {
