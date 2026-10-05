@@ -29,9 +29,6 @@ function Header() {
           <ul>
             {NAV_ITEMS.map((item) => (
               <li key={item.label}>
-                {/* NavLink já sabe qual é a rota atual e aplica a classe
-                    "nav-link-active" sozinho — não precisamos mais de um
-                    campo "active" fixo em cada item do menu. */}
                 <NavLink
                   to={item.href}
                   end={item.href === '/'}
@@ -45,9 +42,14 @@ function Header() {
             ))}
           </ul>
 
-          <Link to="/cadastro" className="btn header-cta">
-            Cadastro
-          </Link>
+          <div className="header-actions">
+            <Link to="/login" className="btn header-login">
+              Login
+            </Link>
+            <Link to="/login?modo=cadastro" className="btn header-cta">
+              Cadastro
+            </Link>
+          </div>
         </nav>
 
         <button

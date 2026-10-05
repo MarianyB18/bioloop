@@ -1,5 +1,4 @@
-/* Tokens de design da marca BioLoop.
-   Nunca usar hex direto nos componentes — sempre referenciar estas variáveis. */
+/* Tokens de design BioLoop */
 :root {
   /* Principais */
   --color-verde-institucional-escuro: #05321c;
@@ -13,7 +12,6 @@
 
   /* Fundo */
   --color-creme-principal: #f4f7ef;
-  /* Tom de destaque suave para áreas de interface sobre o creme principal. */
   --color-creme-destaque: #ecefe4;
   --color-off-white: #fafbf7;
   --color-branco: #fdfdfb;

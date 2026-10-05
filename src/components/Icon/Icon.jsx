@@ -1,6 +1,3 @@
-// Componente de ícone único e reutilizável.
-// Em vez de criar um arquivo .svg para cada ícone, ele recebe o nome do
-// ícone desejado via props e desenha o path correspondente.
 function Icon(props) {
   const paths = {
     leaf: (

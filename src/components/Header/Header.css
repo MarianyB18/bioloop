@@ -67,7 +67,7 @@
   border-bottom-color: var(--color-verde-oliva-suave);
 }
 
-/* Botão "Cadastro" em destaque — verde muito claro, conforme a tabela de aplicação */
+/* Botão "Cadastro" em destaque */
 .header-cta {
   background: var(--color-verde-muito-claro);
   color: var(--color-verde-institucional-escuro);
@@ -76,7 +76,26 @@
 }
 
 .header-cta:hover {
+  background: var(--color-verde-oliva-suave);
+}
+
+/* Botões de acesso (Login + Cadastro) */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Botão "Login" */
+.header-login {
   background: var(--color-branco);
+  color: var(--color-verde-institucional-escuro);
+  font-family: var(--fonte-texto);
+  padding: 10px 20px;
+}
+
+.header-login:hover {
+  background: #d9d9d9;
 }
 
 .header-menu-toggle {
@@ -132,7 +151,12 @@
     width: 100%;
   }
 
-  .header-cta {
+  .header-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header-actions .btn {
     width: 100%;
     justify-content: center;
   }

@@ -3,8 +3,6 @@ import './MetricsBar.css';
 import { METRICAS_HOME } from '../../../data/metrics';
 
 
-// Cada MetricItem recebe seu valor e rótulo via props — o componente pai
-// (MetricsBar) é quem detém a lista e distribui os dados para os filhos.
 function MetricItem(props) {
   return (
     <div className="metric-item">
