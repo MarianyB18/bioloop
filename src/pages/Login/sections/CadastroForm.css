@@ -1,5 +1,12 @@
 /* Formulário de Criar conta */
+/* Observação: nenhum estilo aplicado — estrutura pronta para estilização. */
 
 .cadastro-form {}
 .cadastro-form-title {}
+.cadastro-form-subtitle {}
+
+/* Alternância de público no topo do cadastro (como .tipo-toggle do ContactForm) */
+.login-publico-toggle {}
+.login-publico-btn {}
+.login-publico-btn-active {}
 
