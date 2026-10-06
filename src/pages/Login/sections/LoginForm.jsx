@@ -89,13 +89,13 @@ function LoginForm({ onAlternarModo }) {
       </button>
 
       <p className="login-alternar">
-        Ainda não tem conta?{' '}
+        Ainda não tem cadastro?{' '}
         <button
           type="button"
           className="login-link"
           onClick={() => onAlternarModo('cadastro')}
         >
-          Criar conta
+          Cadastre-se
         </button>
       </p>
     </form>

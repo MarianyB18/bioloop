@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import Icon from '../../../components/Icon/Icon';
 import './CadastroForm.css';
 
 function CadastroForm({ onAlternarModo }) {
+  const [tipoPublico, setTipoPublico] = useState('cooperativa');
   const [tipoCadastro, setTipoCadastro] = useState('');
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
@@ -25,6 +27,22 @@ function CadastroForm({ onAlternarModo }) {
 
   function alterarTipo(valor) {
     setTipoCadastro(valor);
+    limparErro('tipoCadastro');
+    limparErro('cpf');
+    limparErro('cnpj');
+  }
+
+  function selecionarCooperativa() {
+    setTipoPublico('cooperativa');
+    setTipoCadastro('');
+    limparErro('tipoCadastro');
+    limparErro('cpf');
+    limparErro('cnpj');
+  }
+
+  function selecionarEmpresa() {
+    setTipoPublico('empresa');
+    setTipoCadastro('');
     limparErro('tipoCadastro');
     limparErro('cpf');
     limparErro('cnpj');
@@ -91,7 +109,39 @@ function CadastroForm({ onAlternarModo }) {
 
   return (
     <form className="cadastro-form" onSubmit={enviarCadastro} noValidate>
-      <h2 className="cadastro-form-title">Criar conta</h2>
+      <h2 className="cadastro-form-title">Crie sua conta</h2>
+      <p className="cadastro-form-subtitle">
+        Preencha os dados abaixo para começar a usar o BioLoop.
+      </p>
+
+      <div className="login-publico-toggle">
+        <button
+          type="button"
+          className={
+            tipoPublico === 'cooperativa'
+              ? 'login-publico-btn login-publico-btn-active'
+              : 'login-publico-btn'
+          }
+          aria-pressed={tipoPublico === 'cooperativa'}
+          onClick={selecionarCooperativa}
+        >
+          <Icon name="users" />
+          Cooperativa / Produtor
+        </button>
+        <button
+          type="button"
+          className={
+            tipoPublico === 'empresa'
+              ? 'login-publico-btn login-publico-btn-active'
+              : 'login-publico-btn'
+          }
+          aria-pressed={tipoPublico === 'empresa'}
+          onClick={selecionarEmpresa}
+        >
+          <Icon name="building" />
+          Empresa / Comprador
+        </button>
+      </div>
 
       <div className="form-field">
         <label htmlFor="cadastro-tipo">Tipo de cadastro</label>
@@ -104,10 +154,17 @@ function CadastroForm({ onAlternarModo }) {
           aria-invalid={Boolean(erros.tipoCadastro)}
         >
           <option value="">Selecione o tipo</option>
-          <option value="produtor">Produtor rural</option>
-          <option value="cooperativa">Cooperativa</option>
-          <option value="empresa">Empresa / Comprador</option>
-          <option value="outro">Outro</option>
+          {tipoPublico === 'cooperativa' ? (
+            <>
+              <option value="produtor">Produtor rural</option>
+              <option value="cooperativa">Cooperativa</option>
+            </>
+          ) : (
+            <>
+              <option value="empresa">Empresa / Comprador</option>
+              <option value="outro">Outro</option>
+            </>
+          )}
         </select>
         {erros.tipoCadastro && (
           <small className="form-error">{erros.tipoCadastro}</small>
@@ -235,7 +292,7 @@ function CadastroForm({ onAlternarModo }) {
       </button>
 
       <p className="login-alternar">
-        Já tem conta?{' '}
+        Já tem uma conta?{' '}
         <button
           type="button"
           className="login-link"

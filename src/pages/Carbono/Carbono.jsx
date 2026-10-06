@@ -1,29 +1,20 @@
-import CarbonoHeader from './sections/CarbonoHeader';
-import CertificationPanel from './sections/CertificationPanel';
-import KpiSummary from './sections/KpiSummary';
-import ImpactSection from './sections/ImpactSection';
-import OriginSection from './sections/OriginSection';
-import ContractPanel from './sections/ContractPanel';
-import HistoryTimeline from './sections/HistoryTimeline';
-import TraceabilitySection from './sections/TraceabilitySection';
-import StandardsSection from './sections/StandardsSection';
-import StatusAlerts from './sections/StatusAlerts';
+import HeroSection from './sections/HeroSection';
+import ProcessSection from './sections/ProcessSection';
+import ImpactBand from './sections/ImpactBand';
+import CompanySection from './sections/CompanySection';
+import CtaSection from './sections/CtaSection';
 
 function Carbono() {
   return (
     <div className="carbono-page">
-      <CarbonoHeader />
-      <CertificationPanel />
-      <KpiSummary />
-      <ImpactSection />
-      <OriginSection />
-      <ContractPanel />
-      <HistoryTimeline />
-      <TraceabilitySection />
-      <StandardsSection />
-      <StatusAlerts />
+      <HeroSection />
+      <ProcessSection />
+      <ImpactBand />
+      <CompanySection />
+      <CtaSection />
     </div>
   );
 }
 
 export default Carbono;
+
