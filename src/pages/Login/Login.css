@@ -8,20 +8,33 @@
 */
 
 /* Card principal branco (todo o conteúdo de login e cadastro) */
-.login-card {}
+.login-card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
 
 /* Estrutura da página */
-.login-section {}
-.login-wrapper {}
-.login-title {}
+.login-section {
+  
+}
+.login-wrapper {
+ 
+}
+
 
 /* Abas de alternância */
-.login-tabs {}
+.login-tabs {display: none;}
 .login-tab {}
 .login-tab-active {}
 
 /* Estilos compartilhados */
-.form-field {}
+.form-field {
+
+}
 .form-error {}
 .form-submit {}
 .login-alternar {}

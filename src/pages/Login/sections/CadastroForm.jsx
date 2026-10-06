@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './CadastroForm.css';
 
+
 function CadastroForm({ onAlternarModo }) {
   const [tipoCadastro, setTipoCadastro] = useState('');
   const [nome, setNome] = useState('');
