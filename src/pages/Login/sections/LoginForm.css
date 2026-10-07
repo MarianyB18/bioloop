@@ -26,13 +26,10 @@
     margin-bottom: 10px ;
 }
 
-#login-senha{
-    margin-bottom: 10px;
-}
-
  .btn-primary{
     margin-bottom: 8px;
     font-family: var(--fonte-texto);
+    margin-top: 5px;
  }
 
  .form-field{

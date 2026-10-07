@@ -3,6 +3,8 @@ import './Login.css';
 import LoginForm from './sections/LoginForm';
 import CadastroForm from './sections/CadastroForm';
 
+
+
 function Login() {
   const [searchParams, setSearchParams] = useSearchParams();
 
